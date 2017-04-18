@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+
+<head>
+	<title>Word Fox</title>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+	<script src="init.js"></script>
+</head>
+
+<body style="height:100%;">
+	<div id="wrap">
+		<table style="height:100%; width:100%;">
+			<tr class="search-box">
+				<td>
+					<div id="seed_wrap"><input type="text" id="seed" placeholder="Insert keyword..." />
+						<div class="result-filter">
+							<div class="filter filter-google"></div>
+							<div class="filter filter-amazon"></div>
+							<div class="filter filter-cafepress"></div>
+							
+						</div>
+					</div>
+				</td>
+				<td><button id="control">Search</button></td>
+			</tr>
+			<tr style="vertical-align:top;">
+				<td style="height:100%;" colspan="2">
+					<div style="height:100%;">
+						<table style="height:100%; width:100%; border-spacing: 10px; border-collapse: separate;">
+							<tr style="height:100%;">
+								<td width="230" class="results-td">
+									<div class="results_div">
+										<div class="results">
+											<table id="results">
+												<thead>
+													<tr>
+														<td>Rank</td>
+														<td>Keyword</td>
+													</tr>
+												</thead>
+												<tbody></tbody>
+											</table>
+										</div>
+									</div>
+								</td>
+								<td>
+									<div class="results_div">
+										<table id="synonyms" class="results">
+											<thead>
+												<tr>
+													<td>Similar Words</td>
+												</tr>
+											</thead>
+											<tbody></tbody>
+										</table>
+									</div>
+								</td>
+							</tr>
+							<tr>
+								<td colspan="2">
+									<!--<div id="stats" style="width:100%;">0 Keywords. Use the search box on the left</div>-->
+									<div id="progressbar_wrap"><progress max="100" value="0" id="progressbar"></progress></div>
+									<!--<div id="table_actions"><button id="btn_export" class="button">Export CSV</button></div>-->
+								</td>
+							</tr>
+						</table>
+					</div>
+				</td>
+			</tr>
+		</table>
+	</div>
+</body>
+
+</html>
